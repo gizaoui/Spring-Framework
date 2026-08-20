@@ -1,0 +1,44 @@
+
+allprojects {
+
+    repositories {
+        mavenCentral()
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+}
+
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    languageVersion = JavaLanguageVersion.of(24)
+    options.fork = true
+    options.forkOptions.jvmArgs = ['-Xmx1g']
+}
+
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        implementation 'org.springframework:spring-context:7.0.7'
+        implementation 'log4j:log4j:1.2.17'
+
+        implementation 'com.google.code.gson:gson:2.3.1'
+
+        implementation 'org.hibernate:hibernate-core:4.1.4.Final'
+
+        implementation 'org.xerial:sqlite-jdbc:3.7.2'
+
+        implementation 'org.springframework:spring-aop:5.3.1'
+        implementation 'org.aspectj:aspectjrt:1.9.6'
+        implementation 'org.aspectj:aspectjweaver:1.9.6'
+        implementation 'org.projectlombok:lombok:1.18.30'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

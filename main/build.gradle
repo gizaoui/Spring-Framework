@@ -1,0 +1,62 @@
+
+plugins {
+    id 'application'
+}
+
+application {
+    // applicationDefaultJvmArgs=['-Djdk.gtk.version=2']
+    // applicationDefaultJvmArgs=['--warning-mode all']
+    mainClass = 'main.Main'
+}
+
+// cf. MAJ spring-context/Test/settings.gradle
+dependencies {
+    implementation project(':core')
+    implementation project(':01_Configuration')
+    implementation project(':02_Configuration_scan')
+    implementation project(':03_CollegeConfig')
+    implementation project(':04_CollegeConfig_scan')
+    implementation project(':05_PropertySources')
+    implementation project(':06_PropertySources_scan')
+    implementation project(':07_Repository')
+    implementation project(':08_Repository_scan')
+    implementation project(':09_Autowire_without')
+    implementation project(':10_Autowire_with')
+    implementation project(':11_Autowire_with_and_scan')
+    implementation project(':12_Autowire_without_and_bean_in_main')
+    implementation project(':13_Autowire_without_and_scan_in_main')
+    implementation project(':14_Autowire_with_and_scan_in_main')
+    implementation project(':15_Stream')
+    implementation project(':16_Stream_scan')
+}
+
+
+distributions {
+    main {
+        contents {
+            from('.') { include 'src/main/resources/**' }
+        }
+    }
+}
+
+task run(type: JavaExec, overwrite: true) {
+
+    args = ["GZI"]
+
+    // args = ["-fx"]
+    // environment 'LD_LIBRARY_PATH', "${environment.PATH}:${System.getenv('HOME')}/jdk/lib"
+    // println "\n${YELLOW}LD_LIBRARY_PATH :${RESET} ${environment.PATH}:${System.getenv('HOME')}/jdk/lib"
+
+//    classpath = sourceSets.main.runtimeClasspath + files('resources')
+//    workingDir = "${System.getenv('HOME')}${DEPLOY}/current-integration/cms/soft"
+//    jvmArgs = ['-Djdk.gtk.version=2']
+}
+
+
+startScripts {
+    doLast {
+        //unixScript.text = unixScript.text.replace('CLASSPATH=', 'CLASSPATH=$APP_HOME/src/main/resources:')
+    }
+}
+
+

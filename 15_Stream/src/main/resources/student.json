@@ -1,0 +1,63 @@
+[
+   {
+     "id": 0,
+     "name": "Good Alvarado",
+     "age": 33,
+     "gender": "male"
+   },
+   {
+     "id": 1,
+     "name": "Slater Miller",
+     "age": 40,
+     "gender": "male"
+   },
+   {
+     "id": 2,
+     "name": "Millicent Cline",
+     "age": 20,
+     "gender": "female"
+   },
+   {
+     "id": 3,
+     "name": "Stephens Gamble",
+     "age": 26,
+     "gender": "male"
+   },
+   {
+     "id": 4,
+     "name": "Espinoza Mckee",
+     "age": 29,
+     "gender": "male"
+   },
+   {
+     "id": 5,
+     "name": "Bertie Poole",
+     "age": 28,
+     "gender": "female"
+   },
+   {
+     "id": 6,
+     "name": "Deanne Richmond",
+     "age": 28,
+     "gender": "female"
+   },
+   {
+     "id": 7,
+     "name": "Baker Mendez",
+     "age": 35,
+     "gender": "male"
+   },
+   {
+     "id": 8,
+     "name": "Beryl Gilbert",
+     "age": 20,
+     "gender": "female"
+   },
+   {
+     "id": 9,
+     "name": "Garrison Herrera",
+     "age": 40,
+     "gender": "male"
+   }
+ ]
+ 

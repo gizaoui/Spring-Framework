@@ -1,0 +1,22 @@
+rootProject.name = 'configuration'
+
+// cf. MAJ Test/main/build.gradle
+include 'core'
+include '01_Configuration'
+include '02_Configuration_scan'
+include '03_CollegeConfig'
+include '04_CollegeConfig_scan'
+include '05_PropertySources'
+include '06_PropertySources_scan'
+include '07_Repository'
+include '08_Repository_scan'
+include '09_Autowire_without'
+include '10_Autowire_with'
+include '11_Autowire_with_and_scan'
+include '12_Autowire_without_and_bean_in_main'
+include '13_Autowire_without_and_scan_in_main'
+include '14_Autowire_with_and_scan_in_main'
+include '15_Stream'
+include '16_Stream_scan'
+
+include 'main'
