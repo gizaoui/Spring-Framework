@@ -1,7 +1,7 @@
 package main;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
@@ -23,19 +23,19 @@ public class Main {
         com.ex05.entity.Product samsung1 = context05.getBean("samsung", com.ex05.entity.Product.class);
 
         // Création de l'instance
-        com.ex05.service.ShoppingCategoryService laptops1 = context05.getBean("shoppingCategoryService", com.ex05.service.ShoppingCategoryService.class);
-        laptops1.addItem(asus1);
-        laptops1.addItem(redmi1);
-        laptops1.addItem(hp1);
+        com.ex05.service.ShoppingCategoryService laptops = context05.getBean("shoppingCategoryService", com.ex05.service.ShoppingCategoryService.class);
+        laptops.addItem(asus1);
+        laptops.addItem(redmi1);
+        laptops.addItem(hp1);
         logger.info("Category : Laptops");
-        logger.info(laptops1.getItems());
+        logger.info(laptops.getItems());
 
         // Création de l'instance
-        com.ex05.service.ShoppingCategoryService mobiles1 = context05.getBean("shoppingCategoryService", com.ex05.service.ShoppingCategoryService.class);
-        mobiles1.addItem(oneplus1);
-        mobiles1.addItem(samsung1);
+        com.ex05.service.ShoppingCategoryService mobiles = context05.getBean("shoppingCategoryService", com.ex05.service.ShoppingCategoryService.class);
+        mobiles.addItem(oneplus1);
+        mobiles.addItem(samsung1);
         logger.info("Category : Mobile phones");
-        logger.info(mobiles1.getItems());
+        logger.info(mobiles.getItems());
     }
 
 }

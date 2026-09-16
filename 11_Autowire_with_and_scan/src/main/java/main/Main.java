@@ -2,8 +2,8 @@ package main;
 
 import com.ex11.config.AppConfig;
 import com.ex11.controller.RunClass;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 

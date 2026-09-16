@@ -3,8 +3,8 @@ package main;
 
 import com.ex03.config.CollegeConfig;
 import com.ex03.entity.College;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

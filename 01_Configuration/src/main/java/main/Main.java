@@ -3,8 +3,9 @@ package main;
 
 import com.ex01.config.AppConfig;
 import com.ex01.service.MessageService;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
         logger.info(OutColor.GREEN.getCode() + "__________  01  __________" + OutColor.RESET.getCode());
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        // Appel de la méthode 'messageService' de la classe 'AppConfig'
         MessageService messageService = context.getBean("messageService", MessageService.class);
         logger.info(messageService.getMessage());
         context.close();

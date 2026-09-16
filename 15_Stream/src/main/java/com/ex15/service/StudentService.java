@@ -13,8 +13,9 @@ import java.util.stream.Stream;
 
 import com.ex15.entity.Student;
 import com.ex15.repository.StudentRepository;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 

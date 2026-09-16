@@ -3,8 +3,8 @@ package main;
 import com.ex06.config.ShoppingCategoryConfig;
 import com.ex06.entity.Product;
 import com.ex06.service.ShoppingCategoryService;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
