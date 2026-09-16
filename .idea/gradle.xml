@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01_Configuration" />
+            <option value="$PROJECT_DIR$/02_Configuration_scan" />
+            <option value="$PROJECT_DIR$/03_CollegeConfig" />
+            <option value="$PROJECT_DIR$/04_CollegeConfig_scan" />
+            <option value="$PROJECT_DIR$/05_PropertySources" />
+            <option value="$PROJECT_DIR$/06_PropertySources_scan" />
+            <option value="$PROJECT_DIR$/07_Repository" />
+            <option value="$PROJECT_DIR$/08_Repository_scan" />
+            <option value="$PROJECT_DIR$/09_Autowire_without" />
+            <option value="$PROJECT_DIR$/10_Autowire_with" />
+            <option value="$PROJECT_DIR$/11_Autowire_with_and_scan" />
+            <option value="$PROJECT_DIR$/12_Autowire_without_and_bean_in_main" />
+            <option value="$PROJECT_DIR$/13_Autowire_without_and_scan_in_main" />
+            <option value="$PROJECT_DIR$/14_Autowire_with_and_scan_in_main" />
+            <option value="$PROJECT_DIR$/15_Stream" />
+            <option value="$PROJECT_DIR$/16_Stream_scan" />
+            <option value="$PROJECT_DIR$/17_AOP" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/main" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
